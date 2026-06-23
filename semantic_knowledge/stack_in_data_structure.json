@@ -1,0 +1,50 @@
+{
+  "topic": "stack in data structure",
+  "generated_at": "2026-03-13T07:48:32.884190",
+  "concepts": [
+    {
+      "concept": "LIFO",
+      "type": "Principle"
+    },
+    {
+      "concept": "Push",
+      "type": "Operation"
+    },
+    {
+      "concept": "Pop",
+      "type": "Operation"
+    },
+    {
+      "concept": "Peek",
+      "type": "Operation"
+    },
+    {
+      "concept": "Stack Overflow",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Singly Linked List Implementation",
+      "type": "Application"
+    },
+    {
+      "concept": "Operationskeller",
+      "type": "Origin"
+    },
+    {
+      "concept": "Definition",
+      "type": "Definition"
+    },
+    {
+      "concept": "Underflow",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Implementation (Array)",
+      "type": "Application"
+    },
+    {
+      "concept": "Last-In-First-Out",
+      "type": "Principle"
+    }
+  ]
+}
