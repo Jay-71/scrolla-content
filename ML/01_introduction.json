@@ -1,0 +1,155 @@
+{
+  "batch_title": "Introduction",
+  "topics": [
+    {
+      "topic": "What is an ML Engineer?",
+      "atoms": [
+        {
+          "topic": "What is an ML Engineer?",
+          "concept": "Role Definition",
+          "atom_type": "explanation",
+          "content": "A Machine Learning Engineer is a software developer who specializes in designing, building, and deploying machine learning models into production systems.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1
+        },
+        {
+          "topic": "What is an ML Engineer?",
+          "concept": "Role Definition",
+          "atom_type": "mental_model",
+          "content": "Imagine a chef who not only cooks the food (Data Scientist) but also builds the automated kitchen assembly line so millions can get the meal instantly. That's an ML Engineer.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2
+        },
+        {
+          "topic": "What is an ML Engineer?",
+          "concept": "Role Definition",
+          "atom_type": "key_points",
+          "content": "1. Bridges the gap between Data Science and Software Engineering.\n2. Focuses on scaling models.\n3. Requires strong programming and infrastructure skills.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 3
+        },
+        {
+          "topic": "What is an ML Engineer?",
+          "concept": "Role Definition",
+          "atom_type": "quick_check",
+          "content": "True or False: An ML Engineer's primary job is exclusively creating theoretical math algorithms, not writing code.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 5,
+          "order": 4
+        }
+      ]
+    },
+    {
+      "topic": "ML Engineer vs AI Engineer",
+      "atoms": [
+        {
+          "topic": "ML Engineer vs AI Engineer",
+          "concept": "Role Comparison",
+          "atom_type": "explanation",
+          "content": "An ML Engineer focuses on building and scaling predictive models using traditional machine learning algorithms, while an AI Engineer often works with Large Language Models and generative AI APIs.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1
+        },
+        {
+          "topic": "ML Engineer vs AI Engineer",
+          "concept": "Role Comparison",
+          "atom_type": "mental_model",
+          "content": "Think of an ML Engineer as a mechanic who builds custom engines from scratch, while an AI Engineer is someone who takes powerful, pre-built engines (like ChatGPT) and integrates them into cars.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2
+        },
+        {
+          "topic": "ML Engineer vs AI Engineer",
+          "concept": "Role Comparison",
+          "atom_type": "key_points",
+          "content": "1. ML Engineers train models from scratch on tabular or image data.\n2. AI Engineers integrate existing foundation models (like GPT-4).\n3. Both require strong software engineering skills.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 3
+        },
+        {
+          "topic": "ML Engineer vs AI Engineer",
+          "concept": "Overlap",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "content": "In practice, these roles overlap significantly and vary by company. Many organizations merge them into a single 'ML/AI Engineer' position."
+        },
+        {
+          "topic": "ML Engineer vs AI Engineer",
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 5,
+          "content": "True or False: An ML Engineer and AI Engineer are completely separate roles with zero overlap. (Answer: False — they overlap significantly and many companies merge them)."
+        }
+      ]
+    },
+    {
+      "topic": "Skills and Responsibilities",
+      "atoms": [
+        {
+          "topic": "Skills and Responsibilities",
+          "concept": "Core Competencies",
+          "atom_type": "explanation",
+          "content": "An ML Engineer must be proficient in software engineering, distributed systems, cloud architecture, and have a solid foundation in statistics and linear algebra.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1
+        },
+        {
+          "topic": "Skills and Responsibilities",
+          "concept": "Core Competencies",
+          "atom_type": "mental_model",
+          "content": "A successful ML Engineer is like a decathlete: they don't just run or jump; they must balance math, coding, and server management simultaneously.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2
+        },
+        {
+          "topic": "Skills and Responsibilities",
+          "concept": "Core Competencies",
+          "atom_type": "key_points",
+          "content": "1. Deploying models to production (MLOps).\n2. Monitoring data drift and model degradation.\n3. Writing efficient, scalable Python code.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 3
+        },
+        {
+          "topic": "Skills and Responsibilities",
+          "concept": "Core Competencies",
+          "atom_type": "quick_check",
+          "content": "Is building the theoretical math behind a new algorithm a core responsibility of an ML Engineer? (Answer: No, that is typically a Machine Learning Researcher).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4
+        },
+        {
+          "topic": "Skills and Responsibilities",
+          "concept": "Key Tools",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 5,
+          "content": "Essential tools include Python, Scikit-Learn, TensorFlow or PyTorch, SQL for data extraction, and cloud platforms like AWS SageMaker or Google Vertex AI."
+        },
+        {
+          "topic": "Skills and Responsibilities",
+          "concept": "Daily Work",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "content": "The majority of an ML Engineer's time is spent on data preprocessing and feature engineering — not building models. Clean data is the foundation of accurate predictions."
+        }
+      ]
+    }
+  ]
+}

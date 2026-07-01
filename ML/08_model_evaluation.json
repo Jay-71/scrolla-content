@@ -1,0 +1,191 @@
+{
+  "batch_title": "Model Evaluation",
+  "topics": [
+    {
+      "topic": "Model Evaluation Metrics",
+      "atoms": [
+        {
+          "concept": "Classification Metrics",
+          "atom_type": "explanation",
+          "content": "Accuracy measures overall correctness, but Precision measures quality (false positives) and Recall measures quantity (false negatives).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Model Evaluation Metrics"
+        },
+        {
+          "concept": "Precision & Recall",
+          "atom_type": "mental_model",
+          "content": "Precision is 'Of all the emails I called spam, how many actually were?' Recall is 'Of all the real spam emails, how many did I catch?'",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Model Evaluation Metrics"
+        },
+        {
+          "concept": "F1-Score",
+          "atom_type": "explanation",
+          "content": "The F1-Score is the harmonic mean of Precision and Recall. It provides a single metric that perfectly balances the trade-off between the two.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Model Evaluation Metrics"
+        },
+        {
+          "concept": "Regression Metrics",
+          "atom_type": "explanation",
+          "content": "For predicting continuous numbers (regression), we use Mean Squared Error (MSE) or Mean Absolute Error (MAE) to measure how far off our predictions are.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Model Evaluation Metrics"
+        },
+        {
+          "concept": "Confusion Matrix",
+          "atom_type": "explanation",
+          "content": "A confusion matrix is a grid that visually shows exactly what a classification model got right and what it confused (True Positives vs False Positives).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 5,
+          "topic": "Model Evaluation Metrics"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Don't rely solely on Accuracy.\n2. Precision = Quality.\n3. Recall = Quantity.\n4. F1 = Balance.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "topic": "Model Evaluation Metrics"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you build a cancer detection model, is it worse to have a False Positive (scare a healthy patient) or a False Negative (miss a sick patient)? (Answer: False Negative, meaning Recall is more important).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "topic": "Model Evaluation Metrics"
+        }
+      ]
+    },
+    {
+      "topic": "Overfitting and Underfitting",
+      "atoms": [
+        {
+          "concept": "Overfitting",
+          "atom_type": "explanation",
+          "content": "Overfitting happens when a model learns the training data too perfectly, memorizing the noise and failing entirely to generalize to new, unseen data.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Overfitting and Underfitting"
+        },
+        {
+          "concept": "Underfitting",
+          "atom_type": "explanation",
+          "content": "Underfitting happens when a model is too simple to capture the underlying patterns in the data, performing poorly on both training and test sets.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Overfitting and Underfitting"
+        },
+        {
+          "concept": "Over vs Under",
+          "atom_type": "mental_model",
+          "content": "Underfitting is studying for 5 minutes and failing the test. Overfitting is memorizing the practice test answers but failing when the real test changes the numbers.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Overfitting and Underfitting"
+        },
+        {
+          "concept": "Generalization",
+          "atom_type": "explanation",
+          "content": "Generalization is the ultimate goal of ML: a model's ability to adapt properly to new, previously unseen data drawn from the same distribution.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Overfitting and Underfitting"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Overfitting: High train accuracy, low test accuracy.\n2. Underfitting: Low train accuracy, low test accuracy.\n3. Goal: The 'Goldilocks' zone.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Overfitting and Underfitting"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If your model gets 99% accuracy on training data but only 50% on test data, what is happening? (Answer: Overfitting).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 6,
+          "topic": "Overfitting and Underfitting"
+        }
+      ]
+    },
+    {
+      "topic": "Bias-Variance Tradeoff",
+      "atoms": [
+        {
+          "concept": "Bias",
+          "atom_type": "explanation",
+          "content": "Bias is the error introduced by approximating a real-world problem with a model that is too simple (leading to Underfitting).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Bias-Variance Tradeoff"
+        },
+        {
+          "concept": "Variance",
+          "atom_type": "explanation",
+          "content": "Variance is the error introduced by a model being too complex and highly sensitive to small fluctuations in the training data (leading to Overfitting).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Bias-Variance Tradeoff"
+        },
+        {
+          "concept": "Tradeoff",
+          "atom_type": "mental_model",
+          "content": "High Bias is a stubborn person who won't change their mind despite evidence. High Variance is an anxious person who changes their mind based on every tiny detail.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Bias-Variance Tradeoff"
+        },
+        {
+          "concept": "Tradeoff Math",
+          "atom_type": "explanation",
+          "content": "You cannot minimize both simultaneously. Decreasing bias increases variance, and decreasing variance increases bias. ML is about finding the optimal middle ground.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Bias-Variance Tradeoff"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. High Bias = Underfitting.\n2. High Variance = Overfitting.\n3. Goal: Low Bias and Low Variance.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Bias-Variance Tradeoff"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Does a massively complex neural network naturally suffer from high bias or high variance? (Answer: High Variance, as it is prone to overfitting).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "topic": "Bias-Variance Tradeoff"
+        }
+      ]
+    }
+  ]
+}

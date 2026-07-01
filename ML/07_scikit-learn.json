@@ -1,0 +1,173 @@
+{
+  "batch_title": "Scikit-Learn",
+  "topics": [
+    {
+      "topic": "Scikit-Learn (Sklearn)",
+      "atoms": [
+        {
+          "concept": "Sklearn",
+          "atom_type": "explanation",
+          "content": "Scikit-Learn is the industry standard Python library for traditional machine learning algorithms, providing a consistent interface for hundreds of different models.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Scikit-Learn (Sklearn)"
+        },
+        {
+          "concept": "Sklearn",
+          "atom_type": "mental_model",
+          "content": "Sklearn is like a universal remote control. Once you learn how to use it for one TV (algorithm), you know how to use it for all of them.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Scikit-Learn (Sklearn)"
+        },
+        {
+          "concept": "API Design",
+          "atom_type": "explanation",
+          "content": "The core API follows a pattern: fit() to train, predict() for making predictions, and transform() for preprocessing. Many objects support fit_transform() for convenience.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Scikit-Learn (Sklearn)"
+        },
+        {
+          "concept": "Estimators",
+          "atom_type": "explanation",
+          "content": "Any object in Sklearn that can learn from data is called an Estimator. Both a Random Forest model and a MinMax Scaler are estimators.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Scikit-Learn (Sklearn)"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Consistent interface.\n2. Excellent documentation.\n3. Built on NumPy and SciPy.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Scikit-Learn (Sklearn)"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What specific method is called in Sklearn to actively train a model on a dataset? (Answer: The fit() method).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 6,
+          "topic": "Scikit-Learn (Sklearn)"
+        },
+        {
+          "topic": "Scikit-Learn (Sklearn)",
+          "concept": "Pipelines",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 7,
+          "content": "Sklearn Pipelines chain preprocessing steps and models together into a single object. This prevents data leakage and makes code reproducible and deployment-ready."
+        }
+      ]
+    },
+    {
+      "topic": "Train/Test Split",
+      "atoms": [
+        {
+          "concept": "Split",
+          "atom_type": "explanation",
+          "content": "Train/Test split divides your dataset into two pieces: a large chunk to train the model, and a smaller, unseen chunk to test its accuracy.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Train/Test Split"
+        },
+        {
+          "concept": "Split",
+          "atom_type": "mental_model",
+          "content": "If you give a student a practice test (train data) and then give them the exact same test for the final (test data), you don't know if they learned math or just memorized the answers.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 2,
+          "topic": "Train/Test Split"
+        },
+        {
+          "concept": "Data Leakage",
+          "atom_type": "explanation",
+          "content": "Data leakage occurs when information from the test set accidentally leaks into the training set, resulting in overly optimistic, false performance metrics.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Train/Test Split"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Prevents testing on training data.\n2. Usually an 80/20 split.\n3. Essential for evaluating real-world performance.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "Train/Test Split"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Why is testing a model on the exact same data it was trained on a bad idea? (Answer: It encourages memorization instead of true learning).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Train/Test Split"
+        }
+      ]
+    },
+    {
+      "topic": "Cross Validation",
+      "atoms": [
+        {
+          "concept": "Cross Validation",
+          "atom_type": "explanation",
+          "content": "Cross-validation splits data into multiple 'folds'. The model trains on several folds and tests on the remaining one, repeating this process until every fold has been the test set.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 1,
+          "topic": "Cross Validation"
+        },
+        {
+          "concept": "Cross Validation",
+          "atom_type": "mental_model",
+          "content": "It's like having 5 different teachers grade 5 different essays you wrote, rather than relying entirely on 1 teacher's opinion of 1 essay.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Cross Validation"
+        },
+        {
+          "concept": "K-Fold",
+          "atom_type": "explanation",
+          "content": "K-Fold cross-validation divides the dataset into 'K' equal parts. If K=5, the model trains 5 separate times, averaging the final scores for a robust evaluation.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Cross Validation"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Prevents luck-based train/test splits.\n2. K-Fold is the standard method.\n3. Computationally expensive but highly reliable.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Cross Validation"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you perform a 10-Fold Cross Validation, how many different times is the model trained from scratch? (Answer: 10 times).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Cross Validation"
+        }
+      ]
+    }
+  ]
+}

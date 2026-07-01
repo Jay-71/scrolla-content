@@ -1,0 +1,1242 @@
+{
+  "batch_title": "Mathematical Foundations",
+  "topics": [
+    {
+      "topic": "Derivatives, Partial Derivatives",
+      "atoms": [
+        {
+          "topic": "Derivatives, Partial Derivatives",
+          "concept": "Derivatives",
+          "atom_type": "explanation",
+          "content": "A derivative measures the rate at which a function's output changes as its input changes. In ML, it helps us know how to adjust parameters to reduce errors.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 1
+        },
+        {
+          "topic": "Derivatives, Partial Derivatives",
+          "concept": "Derivatives",
+          "atom_type": "mental_model",
+          "content": "Imagine driving a car. Your position is the function. The derivative of your position is your speed (how fast your position is changing at any exact moment).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2
+        },
+        {
+          "topic": "Derivatives, Partial Derivatives",
+          "concept": "Derivatives",
+          "atom_type": "key_points",
+          "content": "1. Slope of the tangent line at a point.\n2. Denoted as dy/dx or f'(x).\n3. Zero derivative means a peak or valley (minimum error!).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 3
+        },
+        {
+          "topic": "Derivatives, Partial Derivatives",
+          "concept": "Partial Derivatives",
+          "atom_type": "explanation",
+          "content": "A partial derivative measures how a function with multiple variables changes when we adjust just ONE variable, keeping all other variables completely frozen.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 4
+        },
+        {
+          "topic": "Derivatives, Partial Derivatives",
+          "concept": "Partial Derivatives",
+          "atom_type": "mental_model",
+          "content": "Imagine baking a cake. How does changing the amount of sugar affect sweetness, assuming flour and eggs stay exactly the same? That's a partial derivative.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 5
+        },
+        {
+          "topic": "Derivatives, Partial Derivatives",
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you are finding the minimum of a curve, what should the derivative be at that lowest point? (Answer: Zero)",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 6,
+          "order": 6
+        }
+      ]
+    },
+    {
+      "topic": "Chain rule of derivation",
+      "atoms": [
+        {
+          "topic": "Chain rule of derivation",
+          "concept": "Chain Rule",
+          "atom_type": "explanation",
+          "content": "The chain rule is a formula to compute the derivative of a composite function. In Machine Learning, it's the core mathematical engine behind backpropagation in neural networks.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 1
+        },
+        {
+          "topic": "Chain rule of derivation",
+          "concept": "Chain Rule",
+          "atom_type": "mental_model",
+          "content": "Imagine a gear system. Gear A turns Gear B, which turns Gear C. To find how fast C turns relative to A, you multiply their individual turning ratios together.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 2
+        },
+        {
+          "topic": "Chain rule of derivation",
+          "concept": "Chain Rule",
+          "atom_type": "example",
+          "content": "If y = f(g(x)), the chain rule states that dy/dx = f'(g(x)) * g'(x). You take the derivative of the outside function and multiply it by the derivative of the inside.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 3
+        },
+        {
+          "topic": "Chain rule of derivation",
+          "concept": "Chain Rule",
+          "atom_type": "key_points",
+          "content": "1. Used for nested functions.\n2. Multiplies local gradients together.\n3. Allows neural networks to pass error backward through multiple layers.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 4
+        },
+        {
+          "topic": "Chain rule of derivation",
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What algorithm in deep learning relies entirely on the chain rule to update weights? (Answer: Backpropagation)",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 6,
+          "order": 5
+        }
+      ]
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "atoms": [
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Gradient",
+          "atom_type": "explanation",
+          "content": "The gradient is a vector that packs all the partial derivatives of a function into one list. It points in the direction of the steepest ascent (maximum increase) of a function.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1
+        },
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Gradient",
+          "atom_type": "mental_model",
+          "content": "Imagine standing on a foggy mountain. If you always step in the steepest upward direction, you'll reach the top. That direction is the gradient.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 2
+        },
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Jacobian",
+          "atom_type": "explanation",
+          "content": "While a gradient is for functions outputting a single number, the Jacobian is a matrix of all first-order partial derivatives for a function that outputs multiple numbers (a vector).",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 3
+        },
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Hessian",
+          "atom_type": "explanation",
+          "content": "The Hessian is a matrix of second-order partial derivatives. It describes the local curvature of a function, telling us if the slope itself is getting steeper or flatter.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 4
+        },
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Hessian",
+          "atom_type": "mental_model",
+          "content": "If the gradient tells you whether you are walking uphill or downhill, the Hessian tells you whether the hill curves like a bowl (convex) or like a saddle.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 5
+        },
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Gradient: 1st derivatives (Vector).\n2. Jacobian: 1st derivatives of multiple outputs (Matrix).\n3. Hessian: 2nd derivatives (Matrix of curvature).",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 10,
+          "order": 6
+        },
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If an optimizer wants to know the 'curvature' of the error landscape to take smarter steps, which mathematical tool should it use? (Answer: Hessian)",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 7
+        },
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Gradient Descent",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 8,
+          "content": "In ML, gradient descent minimizes the loss function by iteratively moving parameters in the opposite direction of the gradient — downhill toward lower error."
+        },
+        {
+          "topic": "Gradient, Jacobian, Hessian",
+          "concept": "Jacobian in ML",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 9,
+          "content": "Jacobians appear in multi-output neural network layers, where they track how each output changes with respect to each input simultaneously."
+        }
+      ]
+    },
+    {
+      "topic": "Matrix & Matrix Operations",
+      "atoms": [
+        {
+          "topic": "Matrix & Matrix Operations",
+          "concept": "Matrix",
+          "atom_type": "explanation",
+          "content": "A matrix is a 2D grid of numbers arranged in rows and columns. In machine learning, matrices are the primary way we store and process datasets and model weights.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1
+        },
+        {
+          "topic": "Matrix & Matrix Operations",
+          "concept": "Matrix",
+          "atom_type": "mental_model",
+          "content": "Think of a matrix as an Excel spreadsheet. Each row represents a single data point (like a user), and each column represents a feature (like their age or height).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2
+        },
+        {
+          "topic": "Matrix & Matrix Operations",
+          "concept": "Addition & Scalar Multiplication",
+          "atom_type": "explanation",
+          "content": "You add two same-sized matrices by adding their corresponding elements. Multiplying every element by a single number is called scalar multiplication.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 3
+        },
+        {
+          "topic": "Matrix & Matrix Operations",
+          "concept": "Dot Product (Matrix Multiplication)",
+          "atom_type": "explanation",
+          "content": "Matrix multiplication (dot product) combines rows of the first matrix with columns of the second. The number of columns in the first MUST equal the number of rows in the second.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 4
+        },
+        {
+          "topic": "Matrix & Matrix Operations",
+          "concept": "Dot Product",
+          "atom_type": "mental_model",
+          "content": "Each entry in the result is the dot product of one row from A and one column from B — like matching quiz answers to an answer key and summing scores.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 5
+        },
+        {
+          "topic": "Matrix & Matrix Operations",
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you multiply a (3x2) matrix by a (2x4) matrix, what is the size of the resulting matrix? (Answer: 3x4)",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 6,
+          "order": 6
+        },
+        {
+          "topic": "Matrix & Matrix Operations",
+          "concept": "Transpose",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "content": "The transpose of a matrix flips it over its diagonal — rows become columns and columns become rows. Denoted A^T, it appears constantly in ML formulas."
+        },
+        {
+          "topic": "Matrix & Matrix Operations",
+          "concept": "Element-wise Operations",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 8,
+          "content": "Element-wise (Hadamard) operations multiply corresponding entries of two same-sized matrices. Used heavily in neural networks for masking and gating."
+        }
+      ]
+    },
+    {
+      "topic": "Scalars, Vectors, Tensors",
+      "atoms": [
+        {
+          "topic": "Scalars, Vectors, Tensors",
+          "concept": "Scalars",
+          "atom_type": "explanation",
+          "content": "A scalar is a single numerical value, representing only magnitude. In deep learning, loss (error) is almost always a scalar value.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 1
+        },
+        {
+          "topic": "Scalars, Vectors, Tensors",
+          "concept": "Vectors",
+          "atom_type": "explanation",
+          "content": "A vector is a 1D array or list of numbers, representing magnitude and direction. It is a tensor of rank 1. A single row of features for one user is a vector.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 2
+        },
+        {
+          "topic": "Scalars, Vectors, Tensors",
+          "concept": "Tensors",
+          "atom_type": "explanation",
+          "content": "A tensor is a generalized n-dimensional array. Scalar = 0D, vector = 1D, matrix = 2D. Higher dimensions are simply called tensors.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 3
+        },
+        {
+          "topic": "Scalars, Vectors, Tensors",
+          "concept": "Tensors",
+          "atom_type": "mental_model",
+          "content": "Think of a scalar as a dot, a vector as a line of dots, a matrix as a square of dots, and a 3D tensor as a cube of dots (like an RGB image).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 4
+        },
+        {
+          "topic": "Scalars, Vectors, Tensors",
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you are processing a batch of 32 color images, each 64x64 pixels, you need a 4D data structure. What is this structure called? (Answer: A 4D Tensor)",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 8,
+          "order": 5
+        },
+        {
+          "topic": "Scalars, Vectors, Tensors",
+          "concept": "Vector Norms",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "content": "The norm measures a vector's length. The L2 norm (Euclidean distance) is used everywhere in ML — from regularization to measuring prediction error."
+        },
+        {
+          "topic": "Scalars, Vectors, Tensors",
+          "concept": "Framework Tensors",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "content": "PyTorch uses torch.Tensor and TensorFlow uses tf.Tensor as their core data structure. All ML computations flow through tensors."
+        }
+      ]
+    },
+    {
+      "topic": "Singular Value Decomposition",
+      "atoms": [
+        {
+          "concept": "SVD",
+          "atom_type": "explanation",
+          "content": "SVD is a factorization method that breaks any complex matrix down into three simpler matrices. It extracts the most important features, discarding noise.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Singular Value Decomposition"
+        },
+        {
+          "concept": "SVD",
+          "atom_type": "mental_model",
+          "content": "Imagine a blurry photograph. SVD separates the true image (core features) from the static (noise), allowing you to compress the image without losing the picture.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Singular Value Decomposition"
+        },
+        {
+          "concept": "U, Sigma, V",
+          "atom_type": "explanation",
+          "content": "SVD decomposes Matrix A into U (left singular vectors), Sigma (diagonal singular values), and V^T (right singular vectors).",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "Singular Value Decomposition"
+        },
+        {
+          "concept": "Singular Values",
+          "atom_type": "explanation",
+          "content": "Singular values are numbers that tell you how much 'energy' or 'importance' each extracted feature holds. The biggest numbers represent the most crucial patterns.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Singular Value Decomposition"
+        },
+        {
+          "concept": "Application",
+          "atom_type": "example",
+          "content": "SVD is the math behind recommendation systems (like Netflix suggesting movies) and image compression (like JPEGs).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Singular Value Decomposition"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Decomposes any matrix.\n2. Extracts core features.\n3. Used for dimensionality reduction and recommendations.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 6,
+          "topic": "Singular Value Decomposition"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you drop the smallest singular values in SVD, what happens to the original data? (Answer: It gets compressed, losing noise but keeping core features)",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 7,
+          "topic": "Singular Value Decomposition"
+        }
+      ]
+    },
+    {
+      "topic": "Determinants, inverse of Matrix",
+      "atoms": [
+        {
+          "concept": "Determinant",
+          "atom_type": "explanation",
+          "content": "The determinant is a single scalar value computed from a square matrix. It describes how the matrix scales areas or volumes when applied as a transformation.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Determinants, inverse of Matrix"
+        },
+        {
+          "concept": "Determinant",
+          "atom_type": "mental_model",
+          "content": "Think of a determinant as a volume dial. If the determinant is 2, the transformation doubles the space. If it's 0, the space is crushed flat.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Determinants, inverse of Matrix"
+        },
+        {
+          "concept": "Inverse Matrix",
+          "atom_type": "explanation",
+          "content": "The inverse of a matrix is another matrix that completely undoes the original matrix's transformation. Multiplying a matrix by its inverse yields the Identity Matrix.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Determinants, inverse of Matrix"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Only square matrices have determinants.\n2. A determinant of 0 means the matrix has NO inverse (it's singular).\n3. Inverses undo transformations.\n4. Negative determinant means the transformation flips orientation.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Determinants, inverse of Matrix"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If a matrix flattens a 3D object into a 2D plane, what is its determinant? (Answer: Zero)",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Determinants, inverse of Matrix"
+        },
+        {
+          "topic": "Determinants, inverse of Matrix",
+          "concept": "Identity Matrix",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "content": "The Identity Matrix has 1s on the diagonal and 0s elsewhere. Multiplying any matrix by the identity returns the original — like multiplying a number by 1."
+        },
+        {
+          "topic": "Determinants, inverse of Matrix",
+          "concept": "ML Relevance",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 7,
+          "content": "In ML, matrix inverses solve the Normal Equation for linear regression, and determinants appear in multivariate Gaussian distribution formulas."
+        }
+      ]
+    },
+    {
+      "topic": "Eigenvalues, Diagonalization",
+      "atoms": [
+        {
+          "concept": "Eigenvectors",
+          "atom_type": "explanation",
+          "content": "An eigenvector is a special vector that only stretches or shrinks when a specific matrix is applied to it, without changing its overall direction.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Eigenvalues, Diagonalization"
+        },
+        {
+          "concept": "Eigenvalues",
+          "atom_type": "explanation",
+          "content": "An eigenvalue is the scalar number that tells you exactly how much the eigenvector was stretched, shrunk, or flipped.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Eigenvalues, Diagonalization"
+        },
+        {
+          "concept": "Eigen",
+          "atom_type": "mental_model",
+          "content": "Imagine stretching a rubber sheet. Most lines painted on it will curve and change direction. The few lines that stay perfectly straight but get longer are eigenvectors.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Eigenvalues, Diagonalization"
+        },
+        {
+          "concept": "Diagonalization",
+          "atom_type": "explanation",
+          "content": "Diagonalization is rewriting a matrix strictly in terms of its eigenvectors and eigenvalues. This makes raising the matrix to a large power computationally trivial.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 4,
+          "topic": "Eigenvalues, Diagonalization"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Eigenvectors don't change direction.\n2. Eigenvalues measure the stretch factor.\n3. Core math behind Principal Component Analysis (PCA).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Eigenvalues, Diagonalization"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If a transformation stretches a vector by a factor of 3 without rotating it, what is the eigenvalue? (Answer: 3)",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 6,
+          "order": 6,
+          "topic": "Eigenvalues, Diagonalization"
+        }
+      ]
+    },
+    {
+      "topic": "Discrete Mathematics",
+      "atoms": [
+        {
+          "concept": "Discrete Math",
+          "atom_type": "explanation",
+          "content": "Discrete mathematics is the study of countable, distinct structures like graphs, logic, and integers, unlike calculus which deals with continuous, unbroken curves.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Discrete Mathematics"
+        },
+        {
+          "concept": "Discrete Math",
+          "atom_type": "mental_model",
+          "content": "Calculus is like pouring a smooth stream of water (continuous). Discrete math is like counting individual ice cubes (discrete).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Discrete Mathematics"
+        },
+        {
+          "concept": "Set Theory & Logic",
+          "atom_type": "explanation",
+          "content": "In ML, set theory defines how we group data, and boolean logic (true/false) is the foundation of decision trees and filtering algorithms.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Discrete Mathematics"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Focuses on distinct values (integers, graphs).\n2. Foundation for algorithms and data structures.\n3. Powers logic gates and decision algorithms.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Discrete Mathematics"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Is predicting the exact temperature (72.435 degrees) a discrete or continuous problem? (Answer: Continuous)",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Discrete Mathematics"
+        },
+        {
+          "topic": "Discrete Mathematics",
+          "concept": "Graph Theory",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "content": "Graph theory studies nodes connected by edges. In ML, graphs model social networks, molecules, and knowledge bases, powering Graph Neural Networks."
+        },
+        {
+          "topic": "Discrete Mathematics",
+          "concept": "Combinatorics",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "content": "Combinatorics is the math of counting arrangements. It helps calculate how many ways to select features or split data in ML experiments."
+        },
+        {
+          "topic": "Discrete Mathematics",
+          "concept": "Big-O Notation",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 8,
+          "content": "Big-O notation describes how an algorithm's runtime grows with input size. O(n) is linear, O(n^2) is quadratic. Critical for comparing ML algorithm efficiency."
+        }
+      ]
+    },
+    {
+      "topic": "Basic concepts (Statistics)",
+      "atoms": [
+        {
+          "concept": "Population vs Sample",
+          "atom_type": "explanation",
+          "content": "A population is the entire group you want to study. A sample is a smaller, representative subset of that population you actually collect data from.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Basic concepts (Statistics)"
+        },
+        {
+          "concept": "Variables",
+          "atom_type": "explanation",
+          "content": "Variables are characteristics that can be measured. Categorical variables represent groups (like color), while numerical variables represent numbers (like age).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Basic concepts (Statistics)"
+        },
+        {
+          "concept": "Statistics",
+          "atom_type": "mental_model",
+          "content": "If you want to know if soup tastes good, you don't drink the whole pot (population). You just taste one spoonful (sample).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Basic concepts (Statistics)"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you survey 100 students to predict the habits of a 10,000-student university, what do the 100 students represent? (Answer: A sample)",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "Basic concepts (Statistics)"
+        },
+        {
+          "topic": "Basic concepts (Statistics)",
+          "concept": "Data Scales",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 5,
+          "content": "Data scales include nominal (unordered categories like color), ordinal (ordered categories like ratings), interval (equal spacing like temperature), and ratio (true zero like weight)."
+        },
+        {
+          "topic": "Basic concepts (Statistics)",
+          "concept": "Variables in ML",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "content": "The independent variable (feature) is what you use to predict. The dependent variable (target/label) is what you are trying to predict."
+        },
+        {
+          "topic": "Basic concepts (Statistics)",
+          "concept": "Sampling Bias",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "content": "Sampling bias occurs when certain groups are over- or under-represented in your sample, leading ML models to learn skewed, unfair patterns."
+        }
+      ]
+    },
+    {
+      "topic": "Descriptive Statistics",
+      "atoms": [
+        {
+          "concept": "Descriptive Stats",
+          "atom_type": "explanation",
+          "content": "Descriptive statistics summarize and organize characteristics of a dataset. They don't predict the future; they just describe what the data currently looks like.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Descriptive Statistics"
+        },
+        {
+          "concept": "Central Tendency",
+          "atom_type": "explanation",
+          "content": "Measures of central tendency include the Mean (average), Median (middle value), and Mode (most frequent value). They locate the center of your data.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Descriptive Statistics"
+        },
+        {
+          "concept": "Spread / Dispersion",
+          "atom_type": "explanation",
+          "content": "Variance and Standard Deviation measure how spread out the data is. High standard deviation means data points are far from the average.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Descriptive Statistics"
+        },
+        {
+          "concept": "Descriptive Stats",
+          "atom_type": "mental_model",
+          "content": "Descriptive stats are like the scoreboard at a basketball game. It tells you the current score and player fouls, but doesn't predict who will win.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Descriptive Statistics"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If Jeff Bezos walks into a bar, the 'average' wealth skyrockets. Which metric should you use instead to find typical wealth? (Answer: Median)",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Descriptive Statistics"
+        },
+        {
+          "topic": "Descriptive Statistics",
+          "concept": "Range",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "content": "Range is the simplest measure of spread: maximum value minus minimum value. It's sensitive to outliers."
+        },
+        {
+          "topic": "Descriptive Statistics",
+          "concept": "Percentiles and IQR",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "content": "Percentiles divide data into 100 equal parts. The IQR (Interquartile Range) spans the 25th to 75th percentile and is used to detect outliers."
+        },
+        {
+          "topic": "Descriptive Statistics",
+          "concept": "Skewness",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 8,
+          "content": "Skewness measures asymmetry in your data distribution. Positive skew has a long right tail; negative skew has a long left tail. Many ML algorithms assume low skew."
+        }
+      ]
+    },
+    {
+      "topic": "Graphs & Charts",
+      "atoms": [
+        {
+          "concept": "Visualizing Data",
+          "atom_type": "explanation",
+          "content": "Graphs and charts are visual representations of data. In ML, they help engineers instantly spot outliers, trends, and correlations before training models.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Graphs & Charts"
+        },
+        {
+          "concept": "Histograms",
+          "atom_type": "explanation",
+          "content": "A histogram groups continuous data into bins (ranges) and plots the frequency. It's the best tool to see the distribution or 'shape' of your data.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Graphs & Charts"
+        },
+        {
+          "concept": "Scatter Plots",
+          "atom_type": "explanation",
+          "content": "A scatter plot graphs two numerical variables against each other as dots. It is highly effective for spotting correlations between two features.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Graphs & Charts"
+        },
+        {
+          "concept": "Box Plots",
+          "atom_type": "explanation",
+          "content": "Box plots visualize the median, quartiles, and extremes of a dataset. They are the standard method for visually identifying mathematical outliers.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Graphs & Charts"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Histogram: Distribution.\n2. Scatter plot: Correlation.\n3. Box plot: Outliers.\n4. Bar chart: Categorical comparisons.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Graphs & Charts"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you want to see if taller people tend to weigh more, which chart should you use? (Answer: Scatter Plot)",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 6,
+          "topic": "Graphs & Charts"
+        }
+      ]
+    },
+    {
+      "topic": "Inferential Statistics",
+      "atoms": [
+        {
+          "concept": "Inferential Stats",
+          "atom_type": "explanation",
+          "content": "Inferential statistics use complex math to make predictions or draw conclusions about a massive population based solely on a small sample.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Inferential Statistics"
+        },
+        {
+          "concept": "Hypothesis Testing",
+          "atom_type": "explanation",
+          "content": "Hypothesis testing evaluates two mutually exclusive statements about a population to determine which statement is best supported by the sample data.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Inferential Statistics"
+        },
+        {
+          "concept": "P-Value",
+          "atom_type": "explanation",
+          "content": "A p-value measures the probability of getting your sample results if the default assumption (null hypothesis) were true. A low p-value indicates statistical significance.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "Inferential Statistics"
+        },
+        {
+          "concept": "Inferential Stats",
+          "atom_type": "mental_model",
+          "content": "If descriptive stats is reading the dashboard of your car, inferential stats is using that dashboard to predict if you have enough gas to reach the next city.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Inferential Statistics"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Uses samples to predict populations.\n2. Involves confidence intervals.\n3. Relies heavily on probability theory.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Inferential Statistics"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If your p-value is 0.01 (1%), does this mean your results are likely a random fluke? (Answer: No, it means the results are statistically significant)",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "topic": "Inferential Statistics"
+        },
+        {
+          "topic": "Inferential Statistics",
+          "concept": "Hypotheses",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "content": "The null hypothesis (H0) states there is no effect or difference. The alternative hypothesis (H1) states there IS an effect. Testing determines which to accept."
+        },
+        {
+          "topic": "Inferential Statistics",
+          "concept": "Confidence Intervals",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 8,
+          "content": "A confidence interval is a range likely to contain the true population parameter. A 95% CI means roughly 95 out of 100 repeated studies would capture the true value."
+        },
+        {
+          "topic": "Inferential Statistics",
+          "concept": "Type I and Type II Errors",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 9,
+          "content": "A Type I error (false positive) rejects a true H0. A Type II error (false negative) fails to reject a false H0. In ML, this maps to precision and recall."
+        }
+      ]
+    },
+    {
+      "topic": "Basics of Probability",
+      "atoms": [
+        {
+          "concept": "Probability",
+          "atom_type": "explanation",
+          "content": "Probability is the mathematical measure of how likely an event is to occur, represented as a number between 0 (impossible) and 1 (certain).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Basics of Probability"
+        },
+        {
+          "concept": "Independent Events",
+          "atom_type": "explanation",
+          "content": "Two events are independent if the outcome of the first does not affect the outcome of the second, like flipping a coin twice.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Basics of Probability"
+        },
+        {
+          "concept": "Conditional Probability",
+          "atom_type": "explanation",
+          "content": "Conditional probability is the likelihood of an event occurring given that another specific event has ALREADY occurred.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Basics of Probability"
+        },
+        {
+          "concept": "Probability",
+          "atom_type": "mental_model",
+          "content": "Independent probability is drawing a card, putting it back, and drawing again. Conditional probability is drawing a card, keeping it, and drawing from the remaining deck.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 4,
+          "topic": "Basics of Probability"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If there is a 100% chance of rain tomorrow, what is the probability represented as a number? (Answer: 1.0)",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Basics of Probability"
+        },
+        {
+          "topic": "Basics of Probability",
+          "concept": "Joint Probability",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "content": "Joint probability P(A and B) is the likelihood of two events both occurring. For independent events, P(A and B) = P(A) x P(B)."
+        },
+        {
+          "topic": "Basics of Probability",
+          "concept": "Probability Rules",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "content": "Addition Rule: P(A or B) = P(A) + P(B) - P(A and B). Multiplication Rule: P(A and B) = P(A) x P(B|A)."
+        },
+        {
+          "topic": "Basics of Probability",
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 8,
+          "content": "1. Probability ranges from 0 to 1.\n2. Independent events don't affect each other.\n3. Conditional probability requires prior knowledge."
+        }
+      ]
+    },
+    {
+      "topic": "Bayes Theorem",
+      "atoms": [
+        {
+          "concept": "Bayes Theorem",
+          "atom_type": "explanation",
+          "content": "Bayes Theorem is a mathematical formula used to update the probability of a hypothesis as more evidence or information becomes available.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Bayes Theorem"
+        },
+        {
+          "concept": "Priors and Posteriors",
+          "atom_type": "explanation",
+          "content": "The 'prior' is your initial belief before seeing evidence. The 'posterior' is your updated belief after incorporating the new data.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Bayes Theorem"
+        },
+        {
+          "concept": "Bayes",
+          "atom_type": "mental_model",
+          "content": "Imagine you think your friend is ignoring you (prior). Then you see their phone is broken (new evidence). You update your belief to 'not ignoring me' (posterior).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "Bayes Theorem"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Foundation of Bayesian Machine Learning.\n2. Reverses conditional probabilities.\n3. Crucial for spam filtering algorithms.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Bayes Theorem"
+        },
+        {
+          "concept": "Example",
+          "atom_type": "example",
+          "content": "Naive Bayes classifiers use Bayes Theorem to predict if an email is spam based on the probability of certain words (like 'Free', 'Viagra') appearing.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 5,
+          "topic": "Bayes Theorem"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Does Bayes Theorem give you a fixed, unchanging probability? (Answer: No, it constantly updates as new evidence arrives)",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "topic": "Bayes Theorem"
+        },
+        {
+          "topic": "Bayes Theorem",
+          "concept": "The Formula",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 7,
+          "content": "The formula: P(A|B) = [P(B|A) x P(A)] / P(B). P(A) is the prior, P(B|A) is the likelihood, and P(A|B) is the posterior."
+        },
+        {
+          "topic": "Bayes Theorem",
+          "concept": "Likelihood",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 8,
+          "content": "The likelihood P(B|A) measures how probable the observed evidence is, assuming the hypothesis is true. It connects prior belief to new data."
+        }
+      ]
+    },
+    {
+      "topic": "Random Variables, PDFs",
+      "atoms": [
+        {
+          "concept": "Random Variable",
+          "atom_type": "explanation",
+          "content": "A random variable is a variable whose possible values are numerical outcomes of a random phenomenon. It maps an uncertain outcome to a real number.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Random Variables, PDFs"
+        },
+        {
+          "concept": "Random Variable",
+          "atom_type": "mental_model",
+          "content": "Think of a random variable as a placeholder box. You don't know exactly what number will go inside until you roll the dice.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Random Variables, PDFs"
+        },
+        {
+          "concept": "PDF",
+          "atom_type": "explanation",
+          "content": "A PDF describes the relative likelihood of a continuous random variable near a specific value. The probability of any single exact value is technically zero.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "Random Variables, PDFs"
+        },
+        {
+          "concept": "PDF",
+          "atom_type": "mental_model",
+          "content": "A PDF describes the relative likelihood of a continuous random variable near a specific value. The probability of any single exact value is technically zero.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Random Variables, PDFs"
+        },
+        {
+          "concept": "Variance",
+          "atom_type": "explanation",
+          "content": "Variance measures how far a set of numbers is spread out from their average value. High variance indicates high uncertainty.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Random Variables, PDFs"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What must the total area under a Probability Density Function curve always equal? (Answer: 1)",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 6,
+          "topic": "Random Variables, PDFs"
+        },
+        {
+          "topic": "Random Variables, PDFs",
+          "concept": "Discrete vs Continuous",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 7,
+          "content": "Discrete random variables take countable values (dice roll: 1-6). Continuous random variables take any value in a range (height: 170.35cm)."
+        },
+        {
+          "topic": "Random Variables, PDFs",
+          "concept": "PMF",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 8,
+          "content": "A PMF (Probability Mass Function) gives exact probabilities for discrete random variables. Unlike a PDF, each outcome has a directly measurable probability."
+        },
+        {
+          "topic": "Random Variables, PDFs",
+          "concept": "CDF",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 9,
+          "content": "A CDF (Cumulative Distribution Function) gives the probability that a random variable is less than or equal to a specific value. It works for both discrete and continuous."
+        }
+      ]
+    },
+    {
+      "topic": "Types of Distribution",
+      "atoms": [
+        {
+          "concept": "Distributions",
+          "atom_type": "explanation",
+          "content": "A probability distribution is a mathematical function showing the probabilities of occurrence of different possible outcomes for an experiment.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Types of Distribution"
+        },
+        {
+          "concept": "Normal Distribution",
+          "atom_type": "explanation",
+          "content": "Also known as the Gaussian or Bell Curve, it is a symmetrical distribution where data clumps around the mean. It's the most common distribution in nature and ML.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Types of Distribution"
+        },
+        {
+          "concept": "Uniform Distribution",
+          "atom_type": "explanation",
+          "content": "In a uniform distribution, all outcomes are equally likely. A perfectly fair dice roll is a discrete uniform distribution.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Types of Distribution"
+        },
+        {
+          "concept": "Binomial Distribution",
+          "atom_type": "explanation",
+          "content": "The binomial distribution models the number of successes in a fixed number of independent trials, each with the same probability of success (like counting heads in 10 flips).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 4,
+          "topic": "Types of Distribution"
+        },
+        {
+          "concept": "Distributions",
+          "atom_type": "mental_model",
+          "content": "Uniform is a flat brick wall. Normal is a symmetrical hill. Binomial is flipping a coin 100 times to see how many heads you get.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Types of Distribution"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Normal: Bell curve, continuous.\n2. Uniform: Flat, equal chance.\n3. Binomial: Success vs Failure (Yes/No).\n4. Poisson: Events over time.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "topic": "Types of Distribution"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Heights of adult humans naturally form a bell curve. What is the mathematical name for this distribution? (Answer: Normal Distribution)",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 7,
+          "topic": "Types of Distribution"
+        },
+        {
+          "topic": "Types of Distribution",
+          "concept": "Poisson Distribution",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 8,
+          "content": "The Poisson distribution models the count of events in a fixed time or space interval, like the number of emails you receive per hour or bugs in code."
+        },
+        {
+          "topic": "Types of Distribution",
+          "concept": "68-95-99.7 Rule",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 9,
+          "content": "The 68-95-99.7 rule: In a normal distribution, ~68% of data falls within 1 standard deviation of the mean, ~95% within 2, and ~99.7% within 3."
+        },
+        {
+          "topic": "Types of Distribution",
+          "concept": "Exponential Distribution",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 10,
+          "content": "The exponential distribution models the time between events in a Poisson process, like the wait time between bus arrivals or server requests."
+        }
+      ]
+    }
+  ]
+}

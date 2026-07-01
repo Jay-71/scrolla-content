@@ -1,0 +1,450 @@
+{
+  "batch_title": "Supervised Learning",
+  "topics": [
+    {
+      "topic": "Linear Regression",
+      "atoms": [
+        {
+          "concept": "Linear Regression",
+          "atom_type": "explanation",
+          "content": "Linear Regression predicts a continuous numerical output by fitting a straight 'line of best fit' through the data points.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Linear Regression"
+        },
+        {
+          "concept": "Linear Regression",
+          "atom_type": "mental_model",
+          "content": "Imagine drawing a single straight line through a swarm of bees that represents the overall direction the swarm is flying.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Linear Regression"
+        },
+        {
+          "concept": "Cost Function",
+          "atom_type": "explanation",
+          "content": "The model learns by minimizing a Cost Function (usually Mean Squared Error), which measures how far the predicted line is from the actual data points.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Linear Regression"
+        },
+        {
+          "concept": "Gradient Descent",
+          "atom_type": "explanation",
+          "content": "Gradient Descent is the optimization algorithm used to iteratively tweak the line's slope and intercept until the error is as small as possible.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Linear Regression"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Predicts continuous numbers.\n2. Uses a line of best fit.\n3. Fast and highly interpretable.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Linear Regression"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Can Linear Regression be used to predict if an email is Spam or Not Spam? (Answer: No, it is for predicting numbers, not categories).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "topic": "Linear Regression"
+        }
+      ]
+    },
+    {
+      "topic": "Logistic Regression",
+      "atoms": [
+        {
+          "concept": "Logistic Regression",
+          "atom_type": "explanation",
+          "content": "Despite its name, Logistic Regression is a classification algorithm used to predict binary outcomes (Yes/No, True/False) by outputting a probability between 0 and 1.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Logistic Regression"
+        },
+        {
+          "concept": "Logistic Regression",
+          "atom_type": "mental_model",
+          "content": "Instead of a straight line going to infinity, Logistic Regression uses an S-shaped curve that squashes all predictions into a strict percentage chance (0% to 100%).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Logistic Regression"
+        },
+        {
+          "concept": "Sigmoid Function",
+          "atom_type": "explanation",
+          "content": "The math behind the S-curve is called the Sigmoid function. If the output probability is > 0.5, it classifies the result as 'Yes'.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Logistic Regression"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Used for binary classification.\n2. Outputs probabilities.\n3. Uses the Sigmoid curve.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "Logistic Regression"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What mathematical function does Logistic Regression use to keep its predictions strictly between 0 and 1? (Answer: The Sigmoid function).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Logistic Regression"
+        }
+      ]
+    },
+    {
+      "topic": "Decision Trees",
+      "atoms": [
+        {
+          "concept": "Decision Trees",
+          "atom_type": "explanation",
+          "content": "A Decision Tree classifies data by answering a series of sequential Yes/No questions, splitting the dataset into smaller branches until it reaches a final decision.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Decision Trees"
+        },
+        {
+          "concept": "Decision Trees",
+          "atom_type": "mental_model",
+          "content": "It works exactly like a game of '20 Questions'. Does it have fur? (Yes) Does it bark? (Yes) -> It's a dog.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Decision Trees"
+        },
+        {
+          "concept": "Entropy/Gini",
+          "atom_type": "explanation",
+          "content": "The tree decides which question to ask first by using math (Gini Impurity or Entropy) to find the question that most perfectly separates the data categories.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "Decision Trees"
+        },
+        {
+          "concept": "Overfitting Risk",
+          "atom_type": "explanation",
+          "content": "Decision trees are highly prone to overfitting because, if left unconstrained, they will keep asking questions until every single training data point has its own tiny branch.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 4,
+          "topic": "Decision Trees"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Highly interpretable.\n2. No data scaling required.\n3. Extremely prone to overfitting if not pruned.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Decision Trees"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Does a Decision Tree require you to use Min-Max scaling on your features before training? (Answer: No, trees do not rely on distances between points).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "topic": "Decision Trees"
+        }
+      ]
+    },
+    {
+      "topic": "Random Forest",
+      "atoms": [
+        {
+          "concept": "Random Forest",
+          "atom_type": "explanation",
+          "content": "A Random Forest is an 'ensemble' model that trains hundreds of separate Decision Trees on random subsets of the data, and then has them vote on the final prediction.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 1,
+          "topic": "Random Forest"
+        },
+        {
+          "concept": "Random Forest",
+          "atom_type": "mental_model",
+          "content": "A single Decision Tree is asking one friend for advice. A Random Forest is asking 500 friends for advice and going with the majority vote.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Random Forest"
+        },
+        {
+          "concept": "Bagging",
+          "atom_type": "explanation",
+          "content": "This technique is called Bagging (Bootstrap Aggregating). Because the trees are trained on random subsets, they don't make the exact same mistakes, making the forest highly accurate.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "Random Forest"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Ensemble of many trees.\n2. Fixes the overfitting problem of single trees.\n3. Very accurate but less interpretable.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Random Forest"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What do we call a machine learning model (like Random Forest) that combines the predictions of multiple smaller models? (Answer: An Ensemble model).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Random Forest"
+        }
+      ]
+    },
+    {
+      "topic": "Support Vector Machines (SVM)",
+      "atoms": [
+        {
+          "concept": "SVM",
+          "atom_type": "explanation",
+          "content": "SVM is a classification algorithm that finds the widest possible 'street' (margin) between different categories of data to confidently separate them.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Support Vector Machines (SVM)"
+        },
+        {
+          "concept": "SVM",
+          "atom_type": "mental_model",
+          "content": "Imagine trying to put a thick piece of tape on the floor between red balls and blue balls. You want the tape to be as wide as possible without touching any balls.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 2,
+          "topic": "Support Vector Machines (SVM)"
+        },
+        {
+          "concept": "Support Vectors",
+          "atom_type": "explanation",
+          "content": "The specific data points resting exactly on the edges of this 'street' are called support vectors. They alone define the entire boundary.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Support Vector Machines (SVM)"
+        },
+        {
+          "concept": "Kernel Trick",
+          "atom_type": "explanation",
+          "content": "If data can't be separated by a straight line, SVM uses the 'Kernel Trick' to mathematically project the data into a higher 3D dimension where a straight cut is possible.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 4,
+          "topic": "Support Vector Machines (SVM)"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Maximizes the margin between classes.\n2. Uses Kernels for complex data.\n3. Excellent for high-dimensional data like text.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Support Vector Machines (SVM)"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "In an SVM, do data points that are far away from the boundary line affect where the line is drawn? (Answer: No, only the 'support vectors' on the edge matter).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "topic": "Support Vector Machines (SVM)"
+        }
+      ]
+    },
+    {
+      "topic": "K-Nearest Neighbors (KNN)",
+      "atoms": [
+        {
+          "concept": "KNN",
+          "atom_type": "explanation",
+          "content": "KNN classifies a new data point by looking at the 'K' closest data points in the training set and having them vote on the new point's category based on distance.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 1,
+          "topic": "K-Nearest Neighbors (KNN)"
+        },
+        {
+          "concept": "KNN",
+          "atom_type": "mental_model",
+          "content": "If you move to a new neighborhood, you're likely similar to your closest neighbors. If 4 of your 5 closest neighbors vote Democrat, KNN predicts you do too.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 2,
+          "topic": "K-Nearest Neighbors (KNN)"
+        },
+        {
+          "concept": "Lazy Learning",
+          "atom_type": "explanation",
+          "content": "KNN is a 'lazy learner.' It doesn't actually build an internal mathematical model during training; it just memorizes the data and does all the math during prediction.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "K-Nearest Neighbors (KNN)"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Distance-based (requires feature scaling!).\n2. No training phase (Lazy).\n3. Slow at prediction time.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "K-Nearest Neighbors (KNN)"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Because KNN relies entirely on measuring the distance between points, what critical preprocessing step must you do to your data first? (Answer: Feature Scaling).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 5,
+          "topic": "K-Nearest Neighbors (KNN)"
+        }
+      ]
+    },
+    {
+      "topic": "Naive Bayes",
+      "atoms": [
+        {
+          "concept": "Naive Bayes",
+          "atom_type": "explanation",
+          "content": "Naive Bayes is a lightning-fast probability algorithm based on Bayes' Theorem. It calculates the probability of a class given a set of features.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Naive Bayes"
+        },
+        {
+          "concept": "Naive Bayes",
+          "atom_type": "mental_model",
+          "content": "It acts like a detective making a snap judgment based on clues. \"I see the word 'Free' and 'Winner', so I'm 99% sure this email is Spam.\"",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 2,
+          "topic": "Naive Bayes"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Assumes all features are perfectly independent (which is 'naive').\n2. Incredibly fast.\n3. Industry standard for text classification.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Naive Bayes"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Why is the algorithm called 'Naive'? (Answer: Because it naively assumes all features in the dataset have zero correlation with each other).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Naive Bayes"
+        },
+        {
+          "topic": "Naive Bayes",
+          "concept": "Bayes Intuition",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 5,
+          "content": "It computes the probability of each class given the input features, then picks the class with the highest probability. Prior probability is updated with new evidence."
+        },
+        {
+          "topic": "Naive Bayes",
+          "concept": "Variants",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "GaussianNB works with continuous data (assumes bell curve). MultinomialNB works with word counts (text classification). BernoulliNB works with binary features (yes/no)."
+        }
+      ]
+    },
+    {
+      "topic": "Gradient Boosting (XGBoost)",
+      "atoms": [
+        {
+          "concept": "Gradient Boosting",
+          "atom_type": "explanation",
+          "content": "Gradient Boosting is an ensemble technique that trains Decision Trees sequentially. Each new tree specifically tries to fix the exact errors made by the previous tree.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 1,
+          "topic": "Gradient Boosting (XGBoost)"
+        },
+        {
+          "concept": "Gradient Boosting",
+          "atom_type": "mental_model",
+          "content": "It's like taking a test. You fail a few questions, so you hire a tutor specifically for the ones you failed. Then you hire another tutor for the remaining failures.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 2,
+          "topic": "Gradient Boosting (XGBoost)"
+        },
+        {
+          "concept": "XGBoost",
+          "atom_type": "explanation",
+          "content": "XGBoost (Extreme Gradient Boosting) is an optimized, blazingly fast software library implementing this algorithm. It is considered the gold standard for tabular data in ML competitions.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "Gradient Boosting (XGBoost)"
+        },
+        {
+          "concept": "Boosting vs Bagging",
+          "atom_type": "explanation",
+          "content": "Random Forest builds trees independently and at the same time (Bagging). XGBoost builds trees sequentially, one after the other (Boosting).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Gradient Boosting (XGBoost)"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Sequential learning.\n2. Dominates Kaggle tabular competitions.\n3. Highly prone to overfitting if not tuned carefully.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Gradient Boosting (XGBoost)"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Does XGBoost train its Decision Trees simultaneously in parallel, or sequentially one by one? (Answer: Sequentially).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "topic": "Gradient Boosting (XGBoost)"
+        }
+      ]
+    }
+  ]
+}

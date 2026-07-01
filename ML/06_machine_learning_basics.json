@@ -1,0 +1,105 @@
+{
+  "batch_title": "Machine Learning Basics",
+  "topics": [
+    {
+      "topic": "What is Machine Learning?",
+      "atoms": [
+        {
+          "concept": "Definition",
+          "atom_type": "explanation",
+          "content": "Machine Learning is a subset of Artificial Intelligence where computers learn to recognize patterns from data without being explicitly programmed with rules.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "What is Machine Learning?"
+        },
+        {
+          "concept": "Definition",
+          "atom_type": "mental_model",
+          "content": "Traditional programming is giving a computer a recipe. Machine Learning is giving a computer a finished cake and asking it to figure out the recipe.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "What is Machine Learning?"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Learns from data.\n2. Identifies hidden patterns.\n3. Improves automatically with experience.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 3,
+          "topic": "What is Machine Learning?"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "In traditional programming, humans write the rules. In ML, who (or what) determines the rules? (Answer: The algorithm learns them from the data).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "What is Machine Learning?"
+        }
+      ]
+    },
+    {
+      "topic": "Supervised vs Unsupervised",
+      "atoms": [
+        {
+          "concept": "Supervised & Unsupervised",
+          "atom_type": "explanation",
+          "content": "Supervised learning trains on labeled data (where the answer is provided). Unsupervised learning trains on unlabeled data to find hidden structures or groupings naturally.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Supervised vs Unsupervised"
+        },
+        {
+          "concept": "Supervised & Unsupervised",
+          "atom_type": "mental_model",
+          "content": "Supervised is learning with a teacher grading your test. Unsupervised is being dropped in a foreign country and figuring out the language by observing.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Supervised vs Unsupervised"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Supervised: Has labels (target variable).\n2. Unsupervised: No labels, finds clusters.\n3. Supervised is much more common.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 3,
+          "topic": "Supervised vs Unsupervised"
+        },
+        {
+          "topic": "Supervised vs Unsupervised",
+          "concept": "Examples",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 4,
+          "content": "Supervised examples: spam detection, house price prediction, image classification. Unsupervised examples: customer segmentation, anomaly detection, topic modeling."
+        },
+        {
+          "topic": "Supervised vs Unsupervised",
+          "concept": "Other Paradigms",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 5,
+          "content": "Supervised and Unsupervised are not the only paradigms. Reinforcement Learning (learning from rewards) and Semi-Supervised Learning (mix of labeled and unlabeled data) also exist."
+        },
+        {
+          "topic": "Supervised vs Unsupervised",
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "If you have customer purchase data with NO labels and want to group similar customers, is this Supervised or Unsupervised? (Answer: Unsupervised — specifically clustering)."
+        }
+      ]
+    }
+  ]
+}

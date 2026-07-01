@@ -1,0 +1,785 @@
+{
+  "batch_title": "Programming Fundamentals",
+  "topics": [
+    {
+      "topic": "Basic Syntax",
+      "atoms": [
+        {
+          "concept": "Python Syntax",
+          "atom_type": "explanation",
+          "content": "Python is an interpreted, high-level programming language that prioritizes readability, using whitespace (indentation) to define code blocks instead of curly braces.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Basic Syntax"
+        },
+        {
+          "concept": "Python Syntax",
+          "atom_type": "mental_model",
+          "content": "Python reads like plain English. Instead of assembling a complex machine with tiny gears (like C++), you give high-level instructions to a smart assistant.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Basic Syntax"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Indentation matters.\n2. No semicolons needed.\n3. Huge standard library.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 3,
+          "topic": "Basic Syntax"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Does Python use curly braces {} to define the scope of a function? (Answer: No, it uses indentation).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "Basic Syntax"
+        },
+        {
+          "topic": "Basic Syntax",
+          "concept": "print() and input()",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 5,
+          "content": "print() displays output to the screen. input() pauses the program and waits for the user to type something. These are the first functions every learner uses."
+        },
+        {
+          "topic": "Basic Syntax",
+          "concept": "Comments",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 6,
+          "content": "Comments are notes for humans that Python ignores. Use # for single-line comments and triple quotes (triple-double-quotes) for multi-line comments."
+        }
+      ]
+    },
+    {
+      "topic": "Variables and Data Types",
+      "atoms": [
+        {
+          "concept": "Variables",
+          "atom_type": "explanation",
+          "content": "Variables are named containers that store data values in memory. Python determines the data type automatically when you assign a value.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Variables and Data Types"
+        },
+        {
+          "concept": "Variables",
+          "atom_type": "mental_model",
+          "content": "Think of a variable as a labeled moving box. You can put a book (string) or a shoe (integer) inside, and Python automatically knows how to handle the box.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Variables and Data Types"
+        },
+        {
+          "concept": "Data Types",
+          "atom_type": "explanation",
+          "content": "Common types include Integers (whole numbers), Floats (decimals), Strings (text), and Booleans (True/False).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 3,
+          "topic": "Variables and Data Types"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. No need to declare types upfront.\n2. Types can change dynamically.\n3. Everything in Python is an object.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Variables and Data Types"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If x = '10', is x an integer or a string? (Answer: A string, because of the quotes).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Variables and Data Types"
+        },
+        {
+          "topic": "Variables and Data Types",
+          "concept": "Type Conversion",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "Type casting converts data between types using int(), float(), and str(). For example, int('10') converts the string '10' into the integer 10."
+        },
+        {
+          "topic": "Variables and Data Types",
+          "concept": "type() and None",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 7,
+          "content": "The type() function reveals a variable's data type. NoneType (the value None) represents the absence of a value and is critical for handling missing data in ML."
+        }
+      ]
+    },
+    {
+      "topic": "Data Structures",
+      "atoms": [
+        {
+          "concept": "Data Structures",
+          "atom_type": "explanation",
+          "content": "Data structures organize and store collections of data. Python's built-in structures include Lists (ordered, mutable), Tuples (ordered, immutable), Dictionaries (key-value), and Sets (unordered, unique).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 1,
+          "topic": "Data Structures"
+        },
+        {
+          "concept": "Data Structures",
+          "atom_type": "mental_model",
+          "content": "A List is a queue at a grocery store. A Dictionary is a phonebook where you look up a name (key) to get a number (value).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Data Structures"
+        },
+        {
+          "concept": "Lists",
+          "atom_type": "explanation",
+          "content": "Lists use square brackets [] and can be changed after creation. You can append, remove, or sort items easily.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Data Structures"
+        },
+        {
+          "concept": "Dictionaries",
+          "atom_type": "explanation",
+          "content": "Dictionaries use curly braces {} and store data in key-value pairs, making data retrieval extremely fast using the key.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Data Structures"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Lists: ordered, mutable.\n2. Tuples: ordered, immutable.\n3. Dicts: Key-value lookup.\n4. Sets: unique values only.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Data Structures"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If you need an ordered sequence of data that should NEVER be modified, which structure should you use? (Answer: Tuple).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 6,
+          "topic": "Data Structures"
+        }
+      ]
+    },
+    {
+      "topic": "Loops",
+      "atoms": [
+        {
+          "concept": "Loops",
+          "atom_type": "explanation",
+          "content": "Loops repeatedly execute a block of code until a specific condition is met or all items in a collection have been processed.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Loops"
+        },
+        {
+          "concept": "Loops",
+          "atom_type": "mental_model",
+          "content": "A loop is like a worker on an assembly line. They apply the exact same action to every item moving down the conveyor belt until it's empty.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Loops"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. 'for' loops iterate over sequences.\n2. 'while' loops run while condition is True.\n3. 'break' exits, 'continue' skips to next iteration.\n4. enumerate() gives index + value pairs.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Loops"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Which type of loop is best for iterating over every item in a list of 100 users? (Answer: A 'for' loop).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "Loops"
+        },
+        {
+          "topic": "Loops",
+          "concept": "For Loops",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 5,
+          "content": "A 'for' loop iterates over each item in a sequence (list, string, range). The range() function generates number sequences, essential for controlling loop iterations."
+        },
+        {
+          "topic": "Loops",
+          "concept": "While Loops",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "A 'while' loop keeps running as long as its condition remains True. Be careful — forgetting to update the condition creates an infinite loop."
+        }
+      ]
+    },
+    {
+      "topic": "Conditionals",
+      "atoms": [
+        {
+          "concept": "Conditionals",
+          "atom_type": "explanation",
+          "content": "Conditionals (if, elif, else) allow your code to make decisions. The program will execute different blocks of code depending on whether a condition is true or false.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Conditionals"
+        },
+        {
+          "concept": "Conditionals",
+          "atom_type": "mental_model",
+          "content": "Conditionals are like train tracks with switches. The train (code) hits a switch (condition) and gets routed down one specific track based on the rules.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Conditionals"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Use 'if' for the first condition.\n2. Use 'elif' for alternative conditions.\n3. Use 'else' as the final fallback.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 3,
+          "topic": "Conditionals"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "If multiple 'elif' conditions evaluate to True, how many of their code blocks will execute? (Answer: Only the first one that evaluates to True).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Conditionals"
+        },
+        {
+          "topic": "Conditionals",
+          "concept": "Boolean Operators",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 5,
+          "content": "Boolean operators combine conditions: 'and' requires both True, 'or' requires at least one True, 'not' inverts the result. Essential for complex decision logic."
+        },
+        {
+          "topic": "Conditionals",
+          "concept": "Truthiness",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "In Python, 0, None, empty string (''), and empty list ([]) are all 'falsy' — they evaluate to False in conditions. Everything else is 'truthy'."
+        }
+      ]
+    },
+    {
+      "topic": "Exceptions",
+      "atoms": [
+        {
+          "concept": "Exceptions",
+          "atom_type": "explanation",
+          "content": "Exceptions are runtime errors that disrupt normal program flow. Using try/except blocks allows your code to catch these errors and handle them gracefully without stopping execution.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Exceptions"
+        },
+        {
+          "concept": "Exceptions",
+          "atom_type": "mental_model",
+          "content": "Exceptions are like car airbags. The try/except block detects a crash (error) and deploys the airbag (fallback code) so the driver (program) survives.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Exceptions"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Wrap risky code in 'try'.\n2. Handle errors in 'except'.\n3. Use 'finally' for code that must run regardless of errors.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Exceptions"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What happens if code inside a 'try' block throws an error, but there is no matching 'except' block? (Answer: The program crashes).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "Exceptions"
+        },
+        {
+          "topic": "Exceptions",
+          "concept": "Common Types",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 5,
+          "content": "Common exceptions: ValueError (wrong value type), TypeError (wrong data type operation), KeyError (missing dictionary key), IndexError (list index out of range)."
+        },
+        {
+          "topic": "Exceptions",
+          "concept": "Raise",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "The 'raise' keyword lets you manually trigger exceptions. Use it to enforce rules in your code, like raising ValueError if a user passes negative input."
+        }
+      ]
+    },
+    {
+      "topic": "Functions, Builtin Functions",
+      "atoms": [
+        {
+          "concept": "Functions",
+          "atom_type": "explanation",
+          "content": "A function is a reusable block of code that performs a specific task. Builtin functions (like print() or len()) are provided by Python out of the box.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Functions, Builtin Functions"
+        },
+        {
+          "concept": "Functions",
+          "atom_type": "mental_model",
+          "content": "A function is like a vending machine. You put coins in (arguments), it runs internal machinery (code), and drops a snack out (return value).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 2,
+          "topic": "Functions, Builtin Functions"
+        },
+        {
+          "concept": "Custom Functions",
+          "atom_type": "explanation",
+          "content": "You can create custom functions using the 'def' keyword, define parameters it should accept, and use 'return' to send data back.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Functions, Builtin Functions"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Promotes code reuse.\n2. Variables inside are scoped locally.\n3. *args accepts variable positional arguments.\n4. **kwargs accepts variable keyword arguments.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "Functions, Builtin Functions"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What Python keyword is used to send a value back out of a custom function? (Answer: The 'return' keyword).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Functions, Builtin Functions"
+        },
+        {
+          "topic": "Functions, Builtin Functions",
+          "concept": "Lambda Functions",
+          "atom_type": "explanation",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "Lambda functions are anonymous, one-line functions. Written as lambda x: x*2, they are used heavily with Pandas operations like df.apply(lambda x: x.strip())."
+        }
+      ]
+    },
+    {
+      "topic": "Object Oriented Programming",
+      "atoms": [
+        {
+          "concept": "OOP Basics",
+          "atom_type": "explanation",
+          "content": "OOP is a paradigm where code is organized into 'Objects' that bundle both data (attributes) and behaviors (methods) together into a single logical unit.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Object Oriented Programming"
+        },
+        {
+          "concept": "Classes and Objects",
+          "atom_type": "mental_model",
+          "content": "A Class is a blueprint for a house. An Object is the actual physical house built from that blueprint. You can build many houses from one blueprint.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Object Oriented Programming"
+        },
+        {
+          "concept": "Inheritance",
+          "atom_type": "explanation",
+          "content": "Classes can inherit attributes and methods from a parent class, allowing developers to create specialized versions of a base class without rewriting code.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Object Oriented Programming"
+        },
+        {
+          "concept": "Encapsulation",
+          "atom_type": "explanation",
+          "content": "Encapsulation hides the internal state of an object from the outside, requiring other code to interact with it only through controlled public methods.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Object Oriented Programming"
+        },
+        {
+          "concept": "Polymorphism",
+          "atom_type": "explanation",
+          "content": "Polymorphism allows different classes to be treated as instances of the same class through a common interface, like different animals all having a 'make_sound()' method.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 14,
+          "order": 5,
+          "topic": "Object Oriented Programming"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Class: blueprint.\n2. Object: instance.\n3. Inheritance: code reuse.\n4. Encapsulation: data hiding.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "topic": "Object Oriented Programming"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What OOP concept allows a 'Dog' class to automatically possess all the methods of an 'Animal' class? (Answer: Inheritance).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 7,
+          "topic": "Object Oriented Programming"
+        }
+      ]
+    },
+    {
+      "topic": "Numpy",
+      "atoms": [
+        {
+          "concept": "NumPy",
+          "atom_type": "explanation",
+          "content": "NumPy is the foundational Python library for numerical computing. It provides a powerful N-dimensional array object that is significantly faster than standard Python lists.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Numpy"
+        },
+        {
+          "concept": "NumPy Arrays",
+          "atom_type": "mental_model",
+          "content": "A Python list is a row of separate buckets. A NumPy array is a single, tightly packed crate of identical items, allowing machines to process them instantly in bulk.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 14,
+          "order": 2,
+          "topic": "Numpy"
+        },
+        {
+          "concept": "Vectorization",
+          "atom_type": "explanation",
+          "content": "NumPy avoids slow for-loops by applying mathematical operations to entire arrays at once, a process known as vectorization.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Numpy"
+        },
+        {
+          "concept": "Broadcasting",
+          "atom_type": "explanation",
+          "content": "Broadcasting allows NumPy to perform operations on arrays of different sizes by virtually stretching the smaller array to match the larger one.",
+          "difficulty": "hard",
+          "estimated_read_time_sec": 12,
+          "order": 4,
+          "topic": "Numpy"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Written in C for extreme speed.\n2. Core data structure is the ndarray.\n3. Uses vectorization instead of loops.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Numpy"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Why is a NumPy array faster than a Python list for math operations? (Answer: It uses dense C arrays and avoids loop overhead through vectorization).",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 6,
+          "topic": "Numpy"
+        },
+        {
+          "topic": "Numpy",
+          "concept": "Array Creation",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 7,
+          "content": "Create arrays with np.array(), np.zeros(), np.ones(), np.arange(), and np.linspace(). These are the building blocks of every numerical computation."
+        },
+        {
+          "topic": "Numpy",
+          "concept": "Shape/Reshape",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 8,
+          "content": "Every array has a .shape attribute showing its dimensions. Use .reshape() to change dimensions without altering data — critical for preparing ML model inputs."
+        }
+      ]
+    },
+    {
+      "topic": "Pandas",
+      "atoms": [
+        {
+          "concept": "Pandas",
+          "atom_type": "explanation",
+          "content": "Pandas is a data analysis library built on top of NumPy. It provides DataFrames, which are powerful 2D tables with labeled axes for easy data manipulation.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Pandas"
+        },
+        {
+          "concept": "Pandas",
+          "atom_type": "mental_model",
+          "content": "Pandas is like Microsoft Excel for Python, but it can handle millions of rows instantly and is controlled entirely by code instead of a mouse.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Pandas"
+        },
+        {
+          "concept": "DataFrames",
+          "atom_type": "explanation",
+          "content": "A DataFrame represents a tabular, spreadsheet-like data structure containing an ordered collection of columns, each of which can be a different value type.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 3,
+          "topic": "Pandas"
+        },
+        {
+          "concept": "Series",
+          "atom_type": "explanation",
+          "content": "A Series is a single column extracted from a DataFrame. It is essentially a 1D NumPy array with an index attached to it.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Pandas"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. DataFrame: 2D table.\n2. Series: 1D column.\n3. Built for cleaning, grouping, and filtering tabular data.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 5,
+          "topic": "Pandas"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "What is the primary 2D data structure used in Pandas called? (Answer: DataFrame).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 6,
+          "order": 6,
+          "topic": "Pandas"
+        },
+        {
+          "topic": "Pandas",
+          "concept": "Data I/O",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 7,
+          "content": "pd.read_csv() loads a CSV file into a DataFrame — the first thing you do in any ML project. Use df.to_csv() to save results back to disk."
+        },
+        {
+          "topic": "Pandas",
+          "concept": "Exploration",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 8,
+          "content": "Use .head() to preview the first 5 rows, .info() to see column types and missing values, .describe() for summary statistics, and .shape for dimensions."
+        },
+        {
+          "topic": "Pandas",
+          "concept": "Filtering",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 9,
+          "content": "Filter rows with boolean indexing: df[df['age'] > 30]. Use .groupby() to aggregate data by categories — essential for feature engineering."
+        }
+      ]
+    },
+    {
+      "topic": "Matplotlib",
+      "atoms": [
+        {
+          "concept": "Matplotlib",
+          "atom_type": "explanation",
+          "content": "Matplotlib is the fundamental plotting library for Python. It provides low-level control over every single element of a graph or chart, from axes to labels.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 12,
+          "order": 1,
+          "topic": "Matplotlib"
+        },
+        {
+          "concept": "Matplotlib",
+          "atom_type": "mental_model",
+          "content": "Matplotlib is like a blank canvas and a set of fine paintbrushes. You have absolute control to draw any chart you want, but you have to paint every detail yourself.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Matplotlib"
+        },
+        {
+          "concept": "Pyplot",
+          "atom_type": "explanation",
+          "content": "The 'pyplot' module provides a state-based interface similar to MATLAB, making it simple to generate basic plots like line charts, scatter plots, and histograms quickly.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 14,
+          "order": 3,
+          "topic": "Matplotlib"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Low-level control.\n2. Foundation for almost all other plotting libraries.\n3. Excellent for static, publication-quality figures.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 4,
+          "topic": "Matplotlib"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Which module in Matplotlib is typically imported as 'plt' to quickly generate plots? (Answer: pyplot).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 5,
+          "topic": "Matplotlib"
+        },
+        {
+          "topic": "Matplotlib",
+          "concept": "Figure/Axes",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "The fig, ax = plt.subplots() pattern creates a Figure (the window) and Axes (the actual plot area). This is the professional way to create customizable plots."
+        },
+        {
+          "topic": "Matplotlib",
+          "concept": "Common Plots",
+          "atom_type": "explanation",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 15,
+          "order": 7,
+          "content": "Key plot types: plt.plot() for line charts, plt.scatter() for scatter plots, plt.bar() for bar charts, plt.hist() for histograms. Call plt.show() to display."
+        }
+      ]
+    },
+    {
+      "topic": "Seaborn",
+      "atoms": [
+        {
+          "concept": "Seaborn",
+          "atom_type": "explanation",
+          "content": "Seaborn is a high-level data visualization library built directly on top of Matplotlib. It focuses on making attractive statistical graphics with minimal code.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 10,
+          "order": 1,
+          "topic": "Seaborn"
+        },
+        {
+          "concept": "Seaborn",
+          "atom_type": "mental_model",
+          "content": "If Matplotlib is painting a chart from scratch, Seaborn is using beautiful, pre-designed templates where you just drop in your dataset and it looks professional instantly.",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 12,
+          "order": 2,
+          "topic": "Seaborn"
+        },
+        {
+          "concept": "Key Points",
+          "atom_type": "key_points",
+          "content": "1. Built on Matplotlib.\n2. Excellent default themes and color palettes.\n3. Designed specifically for working with Pandas DataFrames.",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 10,
+          "order": 3,
+          "topic": "Seaborn"
+        },
+        {
+          "concept": "Check",
+          "atom_type": "quick_check",
+          "content": "Which library requires less code to make a statistically complex, visually appealing chart: Matplotlib or Seaborn? (Answer: Seaborn).",
+          "difficulty": "easy",
+          "estimated_read_time_sec": 8,
+          "order": 4,
+          "topic": "Seaborn"
+        },
+        {
+          "topic": "Seaborn",
+          "concept": "Key Plots",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 5,
+          "content": "Essential ML plots: sns.heatmap() for correlation matrices, sns.pairplot() for feature relationships, sns.boxplot() for outlier detection, sns.histplot() for distributions."
+        },
+        {
+          "topic": "Seaborn",
+          "concept": "Statistical Visualization",
+          "atom_type": "explanation",
+          "difficulty": "medium",
+          "estimated_read_time_sec": 15,
+          "order": 6,
+          "content": "Seaborn excels at statistical plots: sns.regplot() adds regression lines automatically, sns.kdeplot() shows smooth density curves, and sns.violinplot() combines box and density plots."
+        }
+      ]
+    }
+  ]
+}
